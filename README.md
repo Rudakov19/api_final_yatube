@@ -62,4 +62,4 @@ _Запрос GET:_
 http://127.0.0.1:8000/api/v1/posts/
 _Ответ:_
 ### Автор:
-[Дмитрий Рудаков](https://github.com/Rudakov19)
+_[Дмитрий Рудаков](https://github.com/Rudakov19)_
