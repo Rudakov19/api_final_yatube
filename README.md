@@ -67,4 +67,8 @@ python manage.py runserver
 []
 ```
 ### Автор:
+<<<<<<< HEAD
 _[Дмитрий Рудаков](https://github.com/Rudakov19)_
+=======
+_[Дмитрий Рудаков](https://github.com/Rudakov19)_
+>>>>>>> 81b8c35d23f05943f093945117de0f25299676e8
