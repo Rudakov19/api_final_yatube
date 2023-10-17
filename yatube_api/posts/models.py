@@ -2,12 +2,12 @@ from django.contrib.auth import get_user_model
 from django.db import models
 
 User = get_user_model()
-CHARACTER_LIMIT = 30  # ограничение в количестве символов
+CHARACTER_LIMIT = 30
 
 
 class Group(models.Model):
     title = models.CharField('Заголовок', max_length=200)
-    slug = models.SlugField('ЧПУ', unique=True)
+    slug = models.SlugField(unique=True)
     description = models.TextField('Описание')
 
     class Meta:
@@ -50,7 +50,7 @@ class Post(models.Model):
     )
 
     class Meta:
-        ordering = ['author']
+        ordering = ['pub_date']
         verbose_name_plural = 'Посты'
         verbose_name = 'Пост'
 
@@ -84,7 +84,9 @@ class Comment(models.Model):
         verbose_name = 'Коментарий'
 
     def __str__(self):
-        return self.text[:CHARACTER_LIMIT]
+        return (
+            f'{self.text[:CHARACTER_LIMIT]} к посту {self.post}, {self.author}'
+        )
 
 
 class Follow(models.Model):
