@@ -57,9 +57,9 @@ python manage.py migrate
 ```
 python manage.py runserver
 ```
-### Примеры запросов к API
-_Запрос GET:_
-http://127.0.0.1:8000/api/v1/posts/
-_Ответ:_
+### Примеры запросов и ответов:
+| Ресурс | Тип | Путь |
+| ------ | ------ | ------ |
+| Получить список постов | GET | /api/v1/posts/ |
 ### Автор:
 _[Дмитрий Рудаков](https://github.com/Rudakov19)_
