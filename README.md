@@ -64,11 +64,17 @@ python manage.py runserver
 | Получить список постов | GET | /api/v1/posts/ |
 #### Ответ:
 ```
-[]
+count: 123
+next: http://api.example.org/accounts/?offset=400&limit=100
+previous: http://api.example.org/accounts/?offset=200&limit=100
+results:
+  -
+    id: 0
+    author: string
+    text: string
+    pub_date: 2021-10-14T20:41:29.648Z
+    image: string
+    group: 0
 ```
 ### Автор:
-<<<<<<< HEAD
 _[Дмитрий Рудаков](https://github.com/Rudakov19)_
-=======
-_[Дмитрий Рудаков](https://github.com/Rudakov19)_
->>>>>>> 81b8c35d23f05943f093945117de0f25299676e8
